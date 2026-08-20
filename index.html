@@ -1,103 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Lebogang Precious Kgokilwe</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lebogang Kgokilwe — Network Administrator &amp; IT Support Engineer</title>
+<meta name="description" content="Portfolio of Lebogang Kgokilwe, a Network Administrator and IT Support Engineer specialising in Cisco networking, Active Directory, Microsoft 365 and enterprise infrastructure support.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">Lebogang Precious</h1>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true"></span>
+      LK<span class="brand-dot">.</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <ul class="nav-list" id="navList">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm Lebogang Precious Kgokilwe 👋</h1>
-                <p>Web Developer | Building beautiful and functional websites</p>
-                <button class="cta-button">View My Work</button>
-            </div>
+    <a class="btn btn-ghost header-cv" href="Lebogang_Kgokilwe_CV.pdf" download>
+      <span>Download CV</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="topology" class="topology-canvas" aria-hidden="true"></canvas>
+    <div class="wrap hero-inner">
+      <p class="status-pill">
+        <span class="status-dot" aria-hidden="true"></span>
+        Open to network administration &amp; IT support opportunities
+      </p>
+
+      <h1 class="hero-name">Lebogang Kgokilwe</h1>
+      <p class="hero-role">Network Administrator | IT Support Engineer</p>
+
+      <p class="hero-lede">
+        Network &amp; IT Support Engineer with over 10 years of experience
+        supporting enterprise IT infrastructure, Cisco network environments,
+        Microsoft technologies and end-user support &mdash; from switching and
+        routing to Active Directory, Microsoft&nbsp;365 and ITIL-based service
+        management. Passionate about delivering secure, reliable,
+        high-performing network solutions.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="Lebogang_Kgokilwe_CV.pdf" download>
+          <span>Download CV</span>
+        </a>
+        <a class="btn btn-outline" href="#contact">
+          <span>Get in touch</span>
+        </a>
+      </div>
+
+      <dl class="hero-stats">
+        <div class="stat">
+          <dt>Years experience</dt>
+          <dd>10+</dd>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a passionate web developer focused on creating beautiful, functional, and user-friendly web applications. I specialize in HTML, CSS, and JavaScript to build amazing projects that solve real-world problems. I'm constantly learning and improving my skills to deliver high-quality solutions.</p>
-            <div class="skills">
-                <div class="skill-item">
-                    <h3>HTML</h3>
-                    <p>Building structure</p>
-                </div>
-                <div class="skill-item">
-                    <h3>CSS</h3>
-                    <p>Styling & Design</p>
-                </div>
-                <div class="skill-item">
-                    <h3>JavaScript</h3>
-                    <p>Interactivity & APIs</p>
-                </div>
-            </div>
+        <div class="stat">
+          <dt>Certifications held</dt>
+          <dd>8</dd>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>🌤️ Weather App</h3>
-                    <p>A real-time weather application that fetches live weather data from OpenWeatherMap API. Search for any city to see temperature, humidity, wind speed, and more with beautiful weather icons.</p>
-                    <div class="project-tech">HTML • CSS • JavaScript • API</div>
-                    <a href="https://LeboKgokilwePresh.github.io/Weather-app/" class="project-link" target="_blank">View Project →</a>
-                </div>
-                <div class="project-card">
-                    <h3>📝 Coming Soon</h3>
-                    <p>Working on exciting new projects to expand my portfolio. Stay tuned for more amazing web applications built with modern technologies!</p>
-                    <div class="project-tech">HTML • CSS • JavaScript</div>
-                    <a href="#" class="project-link">View Project →</a>
-                </div>
-                <div class="project-card">
-                    <h3>💡 More Projects</h3>
-                    <p>More projects coming soon as I continue learning and building new web applications. Check back regularly to see my latest creations!</p>
-                    <div class="project-tech">Various Technologies</div>
-                    <a href="#" class="project-link">View Project →</a>
-                </div>
-            </div>
+        <div class="stat">
+          <dt>Employers supported</dt>
+          <dd>3</dd>
         </div>
-    </section>
+      </dl>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <p>I'd love to hear from you! Feel free to reach out.</p>
-            <div class="contact-links">
-                <a href="https://github.com/LeboKgokilwePresh" class="contact-link" target="_blank">GitHub</a>
-                <a href="mailto:lkgokilwe22@gmail.com" class="contact-link">Email</a>
-                <a href="https://www.linkedin.com/in/lebogang-precious-kgokilwe" class="contact-link" target="_blank">LinkedIn</a>
-            </div>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap section-grid">
+      <div class="section-head">
+        <p class="eyebrow">About</p>
+        <h2>Support that keeps things running, not just tickets closed</h2>
+      </div>
+
+      <div class="section-body">
+        <p>
+          I'm a Network Administrator and IT Support Engineer based in Midrand,
+          Gauteng, supporting enterprise IT infrastructure across hospitality
+          and managed-support environments &mdash; where downtime has an
+          immediate, visible cost, so I've learned to diagnose fast and
+          communicate clearly while I do it.
+        </p>
+        <p>
+          I'm comfortable across the stack: switch port administration on Cisco
+          infrastructure, TCP/IP, DNS, DHCP, VLANs and VPN connectivity,
+          administering Active Directory accounts and security groups, and
+          resolving Level&nbsp;2/3 incidents within SLA under ITIL process. I've
+          also worked directly with vendors on upgrades and infrastructure
+          maintenance, and installed network devices, printers and wireless
+          access points on-site.
+        </p>
+
+        <ul class="trait-list">
+          <li><i class="trait-icon" aria-hidden="true"></i>Structured problem-solving under pressure</li>
+          <li><i class="trait-icon" aria-hidden="true"></i>Clear communication with non-technical users</li>
+          <li><i class="trait-icon" aria-hidden="true"></i>Calm, methodical incident troubleshooting</li>
+          <li><i class="trait-icon" aria-hidden="true"></i>Team collaboration across support tiers</li>
+          <li><i class="trait-icon" aria-hidden="true"></i>Adaptable across sites, vendors and tools</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical and professional toolkit</h2>
+      </div>
+
+      <div class="skills-grid skills-grid-5">
+        <div class="skill-card">
+          <h3>Networking</h3>
+          <ul class="chip-list">
+            <li>Cisco switching &amp; routing</li>
+            <li>VLAN configuration</li>
+            <li>LAN/WAN</li>
+            <li>TCP/IP</li>
+            <li>DNS</li>
+            <li>DHCP</li>
+            <li>VPN</li>
+            <li>Wireless networking</li>
+            <li>Network troubleshooting</li>
+            <li>Network security</li>
+          </ul>
         </div>
-    </section>
+        <div class="skill-card">
+          <h3>Microsoft</h3>
+          <ul class="chip-list">
+            <li>Active Directory</li>
+            <li>Group Policy</li>
+            <li>Microsoft 365</li>
+            <li>Exchange Online</li>
+            <li>Windows 10/11</li>
+            <li>Windows Server</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Virtualization</h3>
+          <ul class="chip-list">
+            <li>VMware</li>
+            <li>HCIA Cloud Computing</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>ITSM</h3>
+          <ul class="chip-list">
+            <li>ServiceNow</li>
+            <li>Jira</li>
+            <li>ITIL</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Security</h3>
+          <ul class="chip-list">
+            <li>Firewall support</li>
+            <li>Fortinet NSE</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Lebogang Precious Kgokilwe. All rights reserved.</p>
-    </footer>
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Projects</p>
+        <h2>Things I've built and configured</h2>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-tag">Web</span>
+          </div>
+          <h3>Personal portfolio site</h3>
+          <p>
+            This site: a responsive personal portfolio built from scratch to
+            present my experience, certifications and projects to hiring
+            managers, deployed as a static site.
+          </p>
+          <ul class="tech-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <a class="project-link" href="https://github.com/LeboKgokilwePresh/portfolio" target="_blank" rel="noopener">
+            View repository <span aria-hidden="true">&rarr;</span>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-tag">Web / API</span>
+          </div>
+          <h3>Weather app</h3>
+          <p>
+            A weather application that pulls real-time conditions from a public
+            weather API and displays current temperature, conditions and
+            forecast data for any searched location.
+          </p>
+          <ul class="tech-list">
+            <li>JavaScript</li>
+            <li>REST API</li>
+            <li>HTML/CSS</li>
+          </ul>
+          <a class="project-link" href="https://github.com/LeboKgokilwePresh/Weather-app" target="_blank" rel="noopener">
+            View repository <span aria-hidden="true">&rarr;</span>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-tag">Networking</span>
+          </div>
+          <h3>Home lab: multi-VLAN network build</h3>
+          <p>
+            A self-built lab environment simulating a small enterprise network
+            &mdash; multiple VLANs, inter-VLAN routing and DHCP across Cisco
+            switches and routers, used to test configuration changes and
+            failure scenarios before they touch production, and to keep
+            CCNA/CCNP skills sharp.
+          </p>
+          <ul class="tech-list">
+            <li>Cisco IOS</li>
+            <li>Packet Tracer / GNS3</li>
+            <li>VLANs &amp; routing</li>
+            <li>SNMP monitoring</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-alt" id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Experience</p>
+        <h2>Work history</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">2022 &ndash; 2026</p>
+            <h3>Network Engineer &mdash; City Lodge Hotels</h3>
+            <ul>
+              <li>Supported enterprise network infrastructure across multiple hotel branches.</li>
+              <li>Configured and maintained Cisco switches and performed switch port administration.</li>
+              <li>Managed TCP/IP, DNS, DHCP, VLANs and VPN connectivity.</li>
+              <li>Administered Active Directory accounts, permissions and security groups.</li>
+              <li>Supported Microsoft 365 administration and end-user services.</li>
+              <li>Resolved Level 2 and Level 3 networking incidents within SLA.</li>
+              <li>Assisted with firewall troubleshooting and secure remote access.</li>
+              <li>Worked with vendors during upgrades and infrastructure maintenance.</li>
+              <li>Installed network devices, printers and wireless access points.</li>
+              <li>Documented incidents using ServiceNow.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">2021 &ndash; 2022</p>
+            <h3>2nd Line IT Support Technician &mdash; Surf4Life</h3>
+            <ul>
+              <li>Provided desktop and remote support for end users.</li>
+              <li>Supported Microsoft 365 and Windows environments.</li>
+              <li>Managed Active Directory.</li>
+              <li>Installed hardware and software.</li>
+              <li>Performed network troubleshooting.</li>
+              <li>Managed incidents in ServiceNow.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">2019 &ndash; 2021</p>
+            <h3>PABX Technician &mdash; Mighty Comms</h3>
+            <ul>
+              <li>Installed and maintained PABX systems.</li>
+              <li>Configured VoIP solutions.</li>
+              <li>Performed network cabling and telephony support.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+
+      <div class="achievements">
+        <h3>Professional achievements</h3>
+        <ul class="chip-list achievements-list">
+          <li>Supported multi-site network operations</li>
+          <li>Resolved complex L2/L3 incidents</li>
+          <li>Maintained high customer satisfaction</li>
+          <li>Assisted infrastructure upgrades</li>
+          <li>Reduced downtime through proactive troubleshooting</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Education</p>
+        <h2>Education</h2>
+      </div>
+
+      <ul class="education-list">
+        <li>
+          <span class="education-level">NQF 5</span>
+          National Certificate: System Support
+        </li>
+        <li>
+          <span class="education-level">NQF 4</span>
+          National Certificate: Technical Support
+        </li>
+        <li>
+          <span class="education-level">NQF 4</span>
+          National Certificate: Information Technology and Computer Science (Vocational)
+        </li>
+        <li>
+          <span class="education-level">NSC</span>
+          National Senior Certificate
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Certifications</p>
+        <h2>Certifications &amp; professional development</h2>
+      </div>
+
+      <p class="section-note">
+        Vendor-recognised qualifications built alongside on-the-job experience,
+        covering networking, cloud and security.
+      </p>
+
+      <div class="cert-grid">
+        <div class="cert-card"><span class="cert-status">Certified</span><h3>CCNP</h3><p>Cisco Certified Network Professional</p></div>
+        <div class="cert-card"><span class="cert-status">Certified</span><h3>CCNA</h3><p>Cisco Certified Network Associate</p></div>
+        <div class="cert-card"><span class="cert-status">Certified</span><h3>CompTIA Security+</h3><p>Security fundamentals</p></div>
+        <div class="cert-card"><span class="cert-status">Certified</span><h3>CompTIA Network+</h3><p>Networking fundamentals</p></div>
+        <div class="cert-card"><span class="cert-status">Certified</span><h3>CompTIA A+</h3><p>Hardware &amp; systems support</p></div>
+        <div class="cert-card"><span class="cert-status">Certified</span><h3>HCIA Cloud Computing</h3><p>Huawei cloud infrastructure</p></div>
+        <div class="cert-card"><span class="cert-status">Certified</span><h3>Fortinet NSE 2</h3><p>Network security associate</p></div>
+        <div class="cert-card"><span class="cert-status">Certified</span><h3>Fortinet NSE 1</h3><p>Network security awareness</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="wrap contact-inner">
+      <div class="section-head">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's talk about your network</h2>
+        <p class="section-note">
+          Open to network engineering and IT support roles. The fastest way to
+          reach me is email.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:lkgokilwe22@gmail.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">lkgokilwe22@gmail.com</span>
+        </a>
+        <a class="contact-card" href="tel:+27670764838">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">067 076 4838</span>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/lebogang-precious-kgokilwe-46405014b" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">lebogang-precious-kgokilwe</span>
+        </a>
+        <a class="contact-card" href="https://github.com/LeboKgokilwePresh" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">LeboKgokilwePresh</span>
+        </a>
+      </div>
+
+      <a class="btn btn-primary contact-cv" href="Lebogang_Kgokilwe_CV.pdf" download>
+        <span>Download full CV (PDF)</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>&copy; <span id="year"></span> Lebogang Kgokilwe. Built and deployed with GitHub Pages.</p>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
